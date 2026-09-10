@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <!-- <style>
+      header{
+        background-color: aquamarine;
+      }
+    </style> -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- estilos en linea  <header style="background-color: blue; ">-->
+    <header >
+      <nav class="header-navigation ">
+        <a href="">Productos</a>
+        <ul>
+          <li><a href="">ventas</a></li>
+          <li><a href="">inventario</a></li>
+          <li><a href="">usuarios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sidebar-layout">
+      <div class="products-view">
+        <form action="" class="search-form">
+            <input class="form-input" type="search" name="q" placeholder="buscar" required>
+        </form>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="" alt="">
+                <p>Producto 1</p>
+                <strong>64$</strong>
+            </div>
+            <div class="product-card">
+                <img src="" alt="">
+                <p>Producto 2</p>
+                <strong>35$</strong>
+            </div>
+            <div class="product-card">
+                <img src="" alt="">
+                <p>Producto 3</p>
+                <strong>24$</strong>
+            </div>
+            <div class="product-card">
+                <img src="" alt="">
+                <p>Producto 4</p>
+                <strong>12$</strong>
+            </div>
+            
+        </div>
+        <div class="pagination">
+            <button class="btn" > prev </button>
+            <p class="page">1</p>
+            <button class="btn"> next </button>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="cart-list">
+          <span>aun no hay productos</span>
+            <!--apartado del carrito de compra-->
+        </div>
+        <div class="pay-section">
+          
+            <p class="total">Total: 0.00</p>
+            <button class="btn-primary">
+              Realizar compra
+            </button>
+        </div>
+      </aside>
+    </section>
+  </body>
+</html>
