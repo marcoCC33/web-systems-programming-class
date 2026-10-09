@@ -1,0 +1,237 @@
+### 1. POST create (Crear producto)
+POST http://localhost:3000/api/v1/products/create
+Content-Type: application/json
+
+{
+    "name": "Laptop ASUS ROG",
+    "price": 20000.67,
+    "stock": 10,
+    "description": "Laptop gamer with RTX 5090",
+    "brand": "ASUS",
+    "img": "https://ejemplo.com/asus/HOLIS.jpg"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 2. GET getAll (Consulta general)
+GET http://localhost:3000/api/v1/products/getAll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 3. GET getById (Consulta por ID activo)
+GET http://localhost:3000/api/v1/products/getById/4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 4. PUT update (Actualización completa)
+PUT http://localhost:3000/api/v1/products/update/4
+Content-Type: application/json
+
+{
+    "name": "Laptop ASUS ROG Strix",
+    "price": 29000.00,
+    "stock": 3,
+    "description": "MOD with 32GB RAM",
+    "brand": "ASUS",
+    "img": "https://ejemplo.com/asus-zephyrus.jpg"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 5. PATCH change-price (Cambio de precio)
+PATCH http://localhost:3000/api/v1/products/change-price/4
+Content-Type: application/json
+
+{
+    "price": 24500.00
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 6. DELETE delete (Baja lógica)
+DELETE http://localhost:3000/api/v1/products/delete/4
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 7. GET getAll (Comprobar que ya no sale)
+GET http://localhost:3000/api/v1/products/getAll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 8. GET getById (Comprobar que da 404 al estar inactivo)
+GET http://localhost:3000/api/v1/products/getById/4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 9. POST create (Error 400 - Datos inválidos)
+POST http://localhost:3000/api/v1/products/create
+Content-Type: application/json
+
+{
+    "name": "Screen broken",
+    "price": -100,
+    "stock": 5,
+    "description": "The price is negative, it should fail"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 10. GET getById (Error 404 - ID inexistente)
+GET http://localhost:3000/api/v1/products/getById/9999
